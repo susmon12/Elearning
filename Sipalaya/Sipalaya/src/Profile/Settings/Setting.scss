@@ -1,0 +1,43 @@
+.edit{
+    font-size: 17px;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover{
+        font-size: 20px;
+    }
+}
+.prop{
+    z-index: 1;
+    font-size: 50px;
+}
+.profile_Image .image_wrapper {
+    position: relative;
+}
+.Prop_edit{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #0000006b;
+    border-radius: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    &:hover{
+        opacity: 1;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        background: #0000006b;
+        // border-radius: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
